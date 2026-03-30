@@ -1,0 +1,180 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f4f6fb;
+}
+
+/* ===== NAVBAR ===== */
+
+.topbar {
+    background:   #081a54 ;
+    padding: 18px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.topbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.topbar ul li {
+    margin-left: 25px;
+}
+
+.topbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topbar ul li a:hover {
+    opacity: 0.85;
+}
+
+/* ===== CONTAINER UTAMA ===== */
+
+.container {
+    padding: 30px 40px;   /* JARAK ISI DARI NAVBAR */
+}
+
+/* ===== JUDUL ===== */
+
+h2, h3 {
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+/* ===== STATISTIK ===== */
+
+.statistik {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;  /* kasih jarak dari tabel */
+    flex-wrap: wrap;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 12px;
+    width: 170px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-6px);
+}
+
+/* WARNA TETAP */
+.kuning { 
+    background: #cdb4db; 
+    color: #333;
+}
+
+.biru { 
+    background: #bcdffb; 
+    color: white;
+}
+
+.hijau { 
+    background: #f8c8dc; 
+    color: white;
+}
+
+/* ===== TABLE ===== */
+
+table {
+    background: white;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+table th {
+    background:  #081a54 ;
+    color: white;
+    font-weight: 600;
+}
+
+table tr:hover {
+    background-color: #f7f8ff;
+}
+
+/* ===== STATUS BADGE ===== */
+
+.status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.status.menunggu {
+    background-color: #cdb4db;
+    color: #333;
+}
+
+.status.proses {
+    background-color: #bcdffb;
+    color: white;
+}
+
+.status.selesai {
+    background-color: #f8c8dc;
+    color: white;
+}
+
+/* ===== SECTION CARD ===== */
+
+.section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+/* ===== TOMBOL KEMBALI ===== */
+
+.btn-kembali {
+    display: inline-block;
+    background: #081a54;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn-kembali:hover {
+    opacity: 0.85;
+}
